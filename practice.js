@@ -1,11 +1,14 @@
-let name = "I am from Bangladesh";
-let food = ["Cake", "Chocolate", "Ice-Cream"];
-let person = {
-    name: "A A M Khalid Hasan",
-    position: "Software Engineer",
-    age : 25
 
+var n = parseInt(prompt("Enter the value: "))
+var sum = 0;
+var series = " ";
+
+for(var i = 1; i <=n; i++ ){
+    sum = sum + i**2;
+    series = series + (i**2).toString();
+if(i == n){
+    continue;
 }
-for(var x in name){
-    console.log(`index ${x} and item ${name[x]}`)
+    series = series + " + ";
 }
+console.log(`${series} = ${sum}`)
